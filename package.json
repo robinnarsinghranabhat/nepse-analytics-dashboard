@@ -4,10 +4,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.18",
+    "@mui/x-date-pickers": "^7.5.0",
+    "@mui/x-date-pickers-pro": "^7.5.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "chart.js": "^3.7.0",
+    "dayjs": "^1.11.11",
+    "multiselect-react-dropdown": "^2.0.25",
     "react": "^17.0.2",
     "react-chartjs-2": "^4.0.1",
     "react-dom": "^17.0.2",
@@ -42,5 +49,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "packageManager": "yarn@4.2.2"
 }
