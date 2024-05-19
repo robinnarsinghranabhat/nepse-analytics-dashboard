@@ -96,17 +96,16 @@ function App() {
             onChange={(dates) => {
               console.log("On Click Param");
 
-              var selected_dates =
-                dates.map((date_obj) => {
-                  if (date_obj) {
-                    // Perform your modifications on the Day.js object
-                    // For example, add 1 day
-                    return date_obj.format("YYYY-MM-DD");
-                  } else {
-                    // Return the item unchanged
-                    return date_obj;
-                  }
-                });
+              var selected_dates = dates.map((date_obj) => {
+                if (date_obj) {
+                  // Perform your modifications on the Day.js object
+                  // For example, add 1 day
+                  return date_obj.format("YYYY-MM-DD");
+                } else {
+                  // Return the item unchanged
+                  return date_obj;
+                }
+              });
 
               fetch_data_params.Min_Date = selected_dates[0];
               fetch_data_params.Max_Date = selected_dates[1];
@@ -126,11 +125,13 @@ function App() {
           Fetch Data
         </Button>
       </div>
-      <div>
-        <BarChart chartData={stock_data} />
-      </div>
-      <div>
-        <ScatterChart chartData={stock_data} />
+      <div className="MainChart">
+        {/* <div>
+          <BarChart chartData={stock_data} />
+        </div> */}
+        <div>
+          <ScatterChart chartData={stock_data} />
+        </div>
       </div>
     </div>
   );
