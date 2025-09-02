@@ -1,6 +1,6 @@
 # Nepse Visualization Chart
 
-An analytics project to scrape and summarize visualize data daily transactions that happens through brokers in Nepal Stock Exchange.
+An analytics project to scrape, summarize and visualize data on daily buy and sell transactions of stocks that happens through [brokers](https://www.sharesansar.com/broker-list) in Nepal Stock Exchange.
 
 ### Dependencies
 - [Background Data Collection](https://github.com/robinnarsinghranabhat/sharesansar_datascrape) : This Repo Scrapes Official Nepal Stock Exchange Website Daily for daily Transactions through brokers in Nepse.
